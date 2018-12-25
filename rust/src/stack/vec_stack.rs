@@ -1,7 +1,7 @@
-use stack::Stack;
+use super::Stack;
 
 /**
-Trivial implementation of a stack by dispatching to Vector
+Trivial implementation of a stack by dispatching to Vec
 */
 pub struct VecStack {
     vec: Vec<i32>

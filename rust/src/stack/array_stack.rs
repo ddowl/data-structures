@@ -1,4 +1,4 @@
-use stack::Stack;
+use super::Stack;
 
 pub struct ArrayStack {
     capacity: usize,
