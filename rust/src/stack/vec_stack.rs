@@ -4,15 +4,12 @@ use super::Stack;
 Trivial implementation of a stack by dispatching to Vec
 */
 pub struct VecStack {
-    vec: Vec<i32>
-
+    vec: Vec<i32>,
 }
 
 impl VecStack {
     fn new() -> Self {
-        VecStack {
-            vec: vec![],
-        }
+        VecStack { vec: vec![] }
     }
 }
 
@@ -104,4 +101,3 @@ mod tests {
         assert_eq!(stack.peek(), Some(&3));
     }
 }
-

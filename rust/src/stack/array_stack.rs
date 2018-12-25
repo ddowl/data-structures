@@ -7,7 +7,6 @@ pub struct ArrayStack {
     capacity: usize,
     top: usize,
     arr: Box<[i32]>,
-
 }
 
 impl ArrayStack {
@@ -64,8 +63,6 @@ impl Stack for ArrayStack {
             Some(&self.arr[self.top - 1])
         }
     }
-
-
 }
 
 #[cfg(test)]
@@ -146,4 +143,3 @@ mod tests {
         assert_eq!(stack.pop(), None);
     }
 }
-
